@@ -1,0 +1,4 @@
+PyYAML==6.0.2
+PyYAML==6.0.2
+reportlab==4.4.0
+winevt_ng==0.1.0
