@@ -1,0 +1,11 @@
+# config/log_clearing.yaml
+name: Clearing Security Logs
+start_events:
+  - 1102   # audit log cleared
+  - 1100   # security log full/archived
+step_events: []
+end_events: []
+key_fields:
+  - Computer
+threshold: 1
+window_minutes: 1

@@ -1,0 +1,14 @@
+# config/brute_force.yaml
+name: User Credential Brute Forcing
+start_events:
+  - 4625   # failed logon
+step_events:
+  - 4625   # repeated failures
+end_events:
+  - 4740   # account lockout
+  - 4624   # successful logon
+key_fields:
+  - SubjectUserName
+  - IpAddress
+threshold: 5
+window_minutes: 5

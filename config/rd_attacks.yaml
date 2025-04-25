@@ -1,0 +1,12 @@
+name: Remote Desktop Attacks
+start_events:
+  - 4625   # failed logon
+step_events:
+  - 4625   # repeated failures
+end_events:
+  - 4624   # successful RDP login
+  - 4825   # RDP blocked by policy
+key_fields:
+  - IpAddress
+threshold: 3
+window_minutes: 5
